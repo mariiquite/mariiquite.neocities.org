@@ -1,0 +1,292 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+@font-face {
+  font-family: "my-handwriting"; 
+  src: url("assets/my-handwriting.otf.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+/*============LAYOUT============*/
+  body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: "leftbar header rightbar"
+                        "leftbar main rightbar"
+                        "footer footer footer";
+                        
+    background-color: var(--primary);
+    color: var(--text-main);
+    font-family: "my-handwriting";
+    cursor: url(/assets/icons/blue-pointer.png), auto;
+    
+    padding: 15px;
+  }
+
+@media screen and (max-width: 1365px) {
+  body {
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "leftbar header"
+                       "leftbar main"
+                       "rightbar rightbar"
+                       "footer footer";
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+                       "main"
+                       "leftbar"
+                       "rightbar"
+                       "footer";
+  }
+}
+
+header{
+  grid-area: header;
+  display: grid;
+}
+
+#leftbar{
+  grid-area: leftbar;
+}
+
+#rightbar{
+  grid-area: rightbar;
+  display: block;
+  padding: 10px;
+  overflow: scroll;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+  margin-top: 50px;
+  
+  
+  background-color: var(--alt);
+  color: var(--text-alt);
+}
+
+#tabs{
+  display: grid;
+  grid-template-columns: repeat(6,1fr) 10px;
+  margin-bottom: 0px;
+}
+
+.file-tab{
+  border-radius: 10px 10px 0px 0px;
+  margin-right: 2px;
+  padding: 15px;
+  height: auto; 
+
+  margin-bottom: 0px;
+  
+  text-decoration: none;
+  font-size: auto;
+
+  border:solid;
+  border-bottom:none;
+  background-color: var(--alt);
+  color: var(--text-alt);
+  border-color: var(--accent) var(--text-main) var(--primary) var(--main);
+}
+
+/*============CLASSES===========*/
+
+a {
+  color: var(--accent);
+}
+
+button {
+  font-family: "my-handwriting";
+  background-color: var(--main);
+  border: solid;
+  border-color: var(--text-main);
+  a{
+    text-decoration: none;
+    /*make text normal color? currently it's pop*/
+  }
+}
+
+button:hover {
+	background-color: var(--accent-hover);
+}
+
+.dotted{
+  border: dashed;
+  border-color: var(--alt);
+  padding: 10px;
+}
+
+.active{
+  color: var(--text-alt);
+  background: var(--main);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 10px;
+  
+  background-color: var(--alt);
+  padding: 10px;
+}
+
+.gallery img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.gallery-item{
+    border: solid;
+    border-color: var(--accent);
+    border-style:dashed;
+    margin: 2px;
+}
+
+.hidden{
+  display: none;
+}
+
+iframe{
+  border: none;
+}
+
+.img-bttn{
+  margin: 0;
+  padding: 0;
+}
+
+.notif{
+  position: fixed;
+  z-index: 2000;
+  justify-self: center;
+  display: flex;
+}
+
+.overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+}
+
+ul{
+  padding-left: 7px;
+  margin: 5px;
+}
+
+/*===============IDS===============*/
+
+#advisory {
+  margin-top: 10%;
+  max-width: 700px;
+  display: grid;
+  padding: 20px;
+
+  background-color:var(--main);
+  color:var(--text-alt);
+  ul{
+    padding-left: 25px;
+  }
+
+  border-style: solid;
+  border-width: 2px; 
+  border-color: var(--alt);
+}
+
+#continue {
+  border-radius: 0px;
+  font-size: 30px;
+  color: var(--primary)
+}
+
+#file {
+  grid-area: main;
+  padding: 50px;
+  overflow: scroll;
+  height: 350px;
+  
+  background-color: var(--main);
+  border-width: 3px;
+  border-radius: 0px 10px 10px 10px;
+}
+
+#guestbook{
+  margin: 2.5%;
+  width: 95%;
+  height: 600px;
+}
+
+#logo{
+  margin: 0;
+  padding: 0;
+}
+
+#my-button{
+  display: block;
+  margin: auto;
+}
+
+#not-found{
+  grid-area: main;
+  width: 50%;
+  max-width: 700px;
+  height: auto;
+
+  margin: auto;
+  padding: 20px;
+  margin-top: 20%;
+
+  background: var(--main);
+  border-radius: 20px;
+  border: solid;
+  border-color: var(--accent) var(--text) var(--text) var(--accent);
+}
+
+#not-found-bg{
+  background-image: url(/assets/not-found-wolf.png);
+  background-repeat:repeat;
+  background-size: 20%;
+  background-blend-mode:overlay;
+
+}
+
+#profile-picture{
+  width: 95%;
+  margin-top: 20px;
+  border-radius:5px;
+  border: solid;
+  border-color: var(--text-main);
+  max-width: 500px;
+}
+
+#sitebutton{
+  margin: 20px;
+  padding: 15px;
+  padding-top: 0px;
+
+  border: dashed;
+  border-color: var(--main);
+}
+
+#sitemap{
+  padding:0px 10px 0px 10px ;
+  margin: 10px;
+}
+
+#webrings{
+  grid-template-columns: repeat(autofill, 500px);
+}

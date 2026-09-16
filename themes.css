@@ -1,0 +1,259 @@
+:root, html[data-theme="basic"] {
+    --l-green: #98cda9;
+    --d-blue: #073a4b;
+    --orange: #f56958;
+    --blue: #0978a7;
+    --purple: #662d70;
+
+    --primary: var(--l-green);
+    --main: var(--blue);
+    --alt: var(--purple);
+    --text-main: var(--d-blue);
+    --text-alt: var(--l-green);
+    --accent: var(--orange);
+    --accent-hover: var(--d-blue);
+
+    /* MUSIC PLAYER */
+    --bg: var(--blue);
+    --text: var(--purple);
+    --timestamps: var(--purple);
+    --border: var(--d-blue);
+    --buttons: var(--l-green);
+    --window: #b7eec8;
+    --bars: var(--d-blue);
+    --squares: var(--orange);
+}
+
+html[data-theme="basic-dark"] {
+    --l-green: #98cda9;
+    --d-blue: #073a4b;
+    --orange: #f56958;
+    --blue: #0978a7;
+    --purple: #662d70;
+
+    --primary: var(--d-blue);
+    --main: var(--purple);
+    --alt: var(--blue);
+    --text-main: var(--l-green);
+    --text-alt: var(--d-blue);
+    --accent: var(--orange);
+    --accent-hover: var(--l-green);
+
+    /* MUSIC PLAYER */
+    --bg: var(--orange);
+    --text: var(--purple);
+    --timestamps: var(--purple);
+    --border: var(--blue);
+    --buttons: var(--pink);
+    --window: var(--l-green);
+    --bars: var(--l-blue);
+    --squares: var(--d-blue);
+}
+
+html[data-theme="spring"] {
+    --l-green: #C6FFAB;
+    --d-green: #3e632d;
+    --d-blue: #23487d;
+    --l-blue: #6693d4;
+    --pink: #ff97df;
+
+    --primary: var(--l-green);
+    --main: var(--l-blue);
+    --alt: var(--d-green);
+    --text-main: var(--d-blue);
+    --text-alt: var(--l-green);
+    --accent: var(--pink);
+    --accent-hover: var(--d-blue);
+
+    /* MUSIC PLAYER */
+    --bg: var(--l-blue);
+    --text: var(--d-blue);
+    --timestamps: var(--d-blue);
+    --border: var(--d-blue);
+    --buttons: var(--d-blue);
+    --window: #daf0ff;
+    --bars: var(--d-green);
+    --squares: var(--pink);
+}
+
+html[data-theme="spring-dark"] {
+    --d-blue: #183457;
+    --d-green: #294a21;
+    --blue: #2668b9;
+    --pink: #f99fe9;
+    --l-green: #99e486;
+
+    --primary: var(--d-blue);
+    --main: var(--d-green);
+    --alt: var(--blue);
+    --text-main: var(--l-green);
+    --text-alt: var(--d-blue);
+    --accent: var(--pink);
+    --accent-hover: var(--l-green);
+
+    /* MUSIC PLAYER */
+    --bg: var(--blue);
+    --text: #023676;
+    --timestamps: var(--text);
+    --border: var(--d-green);
+    --buttons: var(--pink);
+    --window: var(--l-green);
+    --bars: var(--d-green);
+    --squares: var(--pink);
+}
+
+html[data-theme="summer"] {
+    --yellow: #FFEA99;
+    --blue: #569bfb;
+    --cyan: #61e3f5;
+    --orange: #e15e00;
+    --plum: #700064;
+
+    --primary: var(--yellow);
+    --main: var(--blue);
+    --alt: var(--orange);
+    --text-main: var(--plum);
+    --text-alt: var(--yellow);
+    --accent: var(--cyan);
+    --accent-hover: var(--plum);
+
+    /* MUSIC PLAYER */
+    --bg: var(--blue);
+    --text: var(--plum);
+    --timestamps: var(--plum);
+    --border: var(--orange);
+    --buttons: var(--yellow);
+    --window: var(--cyan);
+    --bars: var(--plum);
+    --squares: var(--orange);
+}
+
+html[data-theme="summer-dark"] {
+    --purple: #58008f;
+    --blue: #3b8cff;
+    --pink: #b8007f;
+    --orange: #fd6f02;
+    --l-blue: #99edf9;
+
+    --primary: var(--purple);
+    --main: var(--blue);
+    --alt: var(--pink);
+    --text-main: var(--l-blue);
+    --text-alt: var(--purple);
+    --accent: var(--orange);
+    --accent-hover: var(--l-blue);
+
+    /* MUSIC PLAYER */
+    --bg: var(--orange);
+    --text: var(--purple);
+    --timestamps: var(--plum);
+    --border: var(--l-blue);
+    --buttons: var(--pink);
+    --window: var(--l-blue);
+    --bars: var(--l-purple);
+    --squares: var(--pink);
+}
+
+html[data-theme="fall"] { 
+    --green: #a5bfa6;
+    --blue: #19727e;
+    --orange: #db651d;
+    --red: #900202;
+    --brown: #472c01;
+
+    --primary: var(--green);
+    --main: var(--blue);
+    --alt: var(--orange);
+    --text-main: var(--brown);
+    --text-alt: var(--green);
+    --accent: var(--red);
+    --accent-hover: var(--brown);
+
+    /* MUSIC PLAYER */
+    --bg: var(--orange);
+    --text: var(--yellow);
+    --timestamps: var(--yellow);
+    --border: var(--red);
+    --buttons: var(--red);
+    --window: var(--blue);
+    --bars: var(--green);
+    --squares: var(--red);
+}
+
+html[data-theme="fall-dark"] {
+    --green: #084c00;
+    --d-purple: #58008f;
+    --l-purple: #883cc3;
+    --lime: #1aff00;
+    --orange: #ffa200;
+
+    --primary: var(--green);
+    --main: var(--d-purple);
+    --alt: var(--l-purple);
+    --text-main: var(--orange);
+    --text-alt: var(--green);
+    --accent: var(--lime);
+    --accent-hover: var(--orange);
+
+    /* MUSIC PLAYER */
+    --bg: var(--d-purple);
+    --text: var(--orange);
+    --timestamps: var(--orange);
+    --border: var(--l-purple);
+    --buttons: var(--lime);
+    --window: var(--l-purple);
+    --bars: var(--l-purple);
+    --squares: var(--lime);
+}
+
+html[data-theme="winter"] {
+    --grey: #f1f5f7;
+    --blue: #a9e1f0;
+    --green: #98a674;
+    --red: #9e283c;
+    --brown: #5a3c23;
+
+    --primary: var(--grey);
+    --main: var(--blue);
+    --alt: var(--green);
+    --text-main: var(--brown);
+    --text-alt: var(--grey);
+    --accent: var(--red);
+    --accent-hover: var(--brown);
+
+    /* MUSIC PLAYER */
+    --bg: var(--blue);
+    --text: var(--brown);
+    --timestamps: var(--brown);
+    --border: var(--green);
+    --buttons: var(--red);
+    --window: var(--blue);
+    --bars: var(--green);
+    --squares: var(--red);
+}
+
+html[data-theme="winter-dark"] {
+    --d-purple: #330066;
+    --purple: #382092; 
+    --blue: #027bcb; 
+    --d-mint: #cc4cff; 
+    --mint: #01efac; 
+    
+    --primary: var(--d-purple);
+    --main: var(--purple);
+    --alt: var(--blue);
+    --text-main: var(--d-mint);
+    --text-alt: var(--d-purple);
+    --accent: var(--mint);
+    --accent-hover: var(--mint);
+
+    /* MUSIC PLAYER */
+    --bg: var(--purple);
+    --text: var(--blue);
+    --timestamps: var(--blue)
+    --border: var(--blue);
+    --buttons: var(--d-mint);
+    --window: var(--mint);
+    --bars: var(--blue);
+    --squares: var(--d-mint);
+}

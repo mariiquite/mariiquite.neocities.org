@@ -1,0 +1,103 @@
+<html>
+  <center> <img id="profile-picture" src="/assets/img/solpfp.png"> </center>
+  <center>
+      <div id="musicplayer">
+            <div class="now-playing">Loading...</div>
+ 
+            <div class="track-info">
+                <div class="track-name">~~~~~~~~~</div>
+                <div class="track-artist"></div>
+            </div>
+ 
+            <div class="controls">
+                <div class="seeking">
+                    <div class="current-time"> 0:00 </div>
+ 
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+ 
+                    <div class="total-duration"> 0:00 </div>
+                </div>
+ 
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">&#171;</div>
+ 
+                    <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
+ 
+                    <div class="next-track" onclick="nextTrack()">&#187;</div>
+                </div>
+ 
+                <div class="volume">
+                    <div class="volume-icon">&#128265;</div>
+                    <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> 
+                </div>
+            </div>
+ 
+            <audio id="music" src="not_found.html"></audio>
+      </div> 
+  </center>
+  
+        <!--
+      <div id=sitemap class="dotted">
+      <h3>Site Map (inactive links, for now)</h3>
+      <div id="site-index">
+        <ul>
+          <li>cover page</li>
+          <li>home page</li>
+            <ul>
+              <li> Works </li>
+              	<ul>
+              	  <li> artfight </li>
+                  <li> toyhou.se </li>
+                  <li> substack </li>
+              	  <li> soundcloud </li>
+              	  <li> band camp </li>
+              	  <li> Bluesky </li>
+              	</ul>
+            	<li> Gallery </li>
+            	<ul>
+            	  <li> iNaturalist </li>
+            	  <li> Gallery </li>
+            	</ul>
+            	<li> Favorites </li>
+            	<ul>
+              	<li> Shrines! </li>
+            	  <li> letterboxd </li>
+            	  <li> hardcover </li>
+            	</ul>
+            	<li> Contact </li>
+            	<ul>
+            	  <li> Bluesky </li>
+            	  <li> Instagram </li>
+            	  <li> Email </li>
+            	</ul>
+            	<li> Guestbook </li>
+            	<li> Support </li>
+            	<ul>
+            	  <li> Patreon </li>
+            	  <li> Kofi </li>
+            	  <li> Substack </li>
+            	  <li> Etc </li>
+            	</ul>
+            </ul>
+        </ul>
+      </div>
+      </div>
+      <div id="site-graph">
+       <p> this is going to be a cool node graph of my site :)) </p> -->
+      <center id="sitebutton">
+        <p> My site button: </p>
+        <a href="https://mariiquite.neocities.org"> 
+          <img id = "my-button" src="/assets/img/mariiquite.png" alt="mariiquite site button" title = "mariiquite"> 
+        </a>
+        <br>
+        <textarea>
+          <a href="https://mariiquite.neocities.org"> 
+          <img src="https://mariiquite.neocities.org/assets/img/mariiquite.png" alt="mariiquite site button" title = "mariiquite"> 
+          </a>
+        </textarea>
+      </center>
+
+      <center id="site-progress">
+        <a href="/progress.html" > <button> Site Progress </button> </a>
+      </center>
+</html>

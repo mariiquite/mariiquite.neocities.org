@@ -1,0 +1,89 @@
+@import url('themes.css');
+
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "head1 head2 head3"
+                         "left center right";
+    
+}
+
+.kanban-column{
+    height: 1vp;
+    overflow-y: scroll;
+}
+
+.column-header{
+    background-color: var(--primary);
+    position: sticky;
+    margin-top: auto;
+}
+
+.kanban-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.kanban-card{
+    padding: 10px;
+
+    border-width: 2px;
+    border-radius: 10px;
+    color: var(--text);
+}
+
+
+#progress-left{
+    .kanban-card{
+        background-color: var(--main);
+    }
+}
+
+#todo{
+    grid-area: left;
+}
+
+#progress-center{
+    .kanban-card{
+            background-color: var(--alt);
+        }
+}
+
+#inprogress{
+    grid-area: center;
+}
+
+#progress-right{
+    .kanban-card{
+        background-color: var(--accent);
+    }
+}
+
+#complete{
+    grid-area: right;
+}
+
+#header1{
+    grid-area: head1;
+}
+
+#header2{
+    grid-area: head2;
+
+}
+
+#header3{
+    grid-area: head3;
+
+}
+
+#back-button{
+    position:fixed; 
+    top: 10px;
+    background-color: var(--text);
+    border-color: var(--alt);
+    color: var(--accent);
+    z-index: 1;
+}

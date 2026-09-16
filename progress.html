@@ -1,0 +1,40 @@
+<html data-theme="basic">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@mariiquite</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="themes.css" rel="stylesheet" type="text/css" media="all">
+    <link href="kanban.css" rel="stylesheet" type="text/css" media="all">
+
+    <script src = "themes.js"></script>
+    <script src = "progress.js"></script>
+  </head>
+
+  <a href = "home.html" id="back-button"> 
+    <button > <- Home </button>
+  </a>
+  
+  <div id="header1"class="column-header">
+      <h2> TO-DO</h2>
+  </div>
+
+  <div class="kanban-column" id="progress-left">
+    <div id="todo" class="kanban-area"></div>
+  </div>
+
+  <div id="header2"class="column-header">
+      <h2> ON IT! </h2>
+  </div>
+  
+  <div class="kanban-column" id="progress-center">
+    <div id="inprogress" class="kanban-area"> </div>
+  </div>
+
+   <div id="header3"class="column-header">
+      <h2> COMPLETE</h2>
+  </div>
+  <div class="kanban-column" id="progress-right">
+    <div id="complete" class="kanban-area"></div>
+  </div>

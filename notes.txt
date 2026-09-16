@@ -1,0 +1,4 @@
+okay you need to figure out 
+what is loading when (event listeners) bc there are many
+ISSUES with that and u don't have record of when things happen
+which makes them hard to deal with 
