@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     loadContent(document.querySelector("footer"), "footer.html");
     loadContent(document.querySelector("#leftbar"), "left-bar.html");
     loadContent(document.querySelector("#rightbar"), "right-bar.html");
+
+    loadMusic();
 });
 
 window.onload = function () {
@@ -81,4 +83,10 @@ const dismiss = self => {
   if (em) {
     em.classList.add("hidden");
   }
+}
+
+function loadMusic(){
+  const script = document.createElement('musicScript');
+  musicScript.src = 'music.js';
+  document.body.appendChild(musicScript);
 }

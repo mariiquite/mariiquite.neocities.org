@@ -7,10 +7,12 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <link href="music.css" rel="stylesheet" type="text/css" media="all">
     <link href="themes.css" rel="stylesheet" type="text/css" media="all">
+    <link href="layout.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://furryring.neocities.org/onionring.css">
 
     <script src = "layout.js"></script>
     <script src = "themes.js"></script>
+    <script src = "cursor.js"></script>
   </head>
   <!-- 
   <script> NekoType="black" </script>
@@ -20,7 +22,43 @@
     </h1> --> 
 
     <header></header>
-    <div id = "leftbar"></div>
+    <div id = "leftbar">
+      <center>
+      <div id="musicplayer">
+            <div class="now-playing">Loading...</div>
+ 
+            <div class="track-info">
+                <div class="track-name">~~~~~~~~~</div>
+                <div class="track-artist"></div>
+            </div>
+ 
+            <div class="controls">
+                <div class="seeking">
+                    <div class="current-time"> 0:00 </div>
+ 
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+ 
+                    <div class="total-duration"> 0:00 </div>
+                </div>
+ 
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">&#171;</div>
+ 
+                    <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
+ 
+                    <div class="next-track" onclick="nextTrack()">&#187;</div>
+                </div>
+ 
+                <div class="volume">
+                    <div class="volume-icon">&#128265;</div>
+                    <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()"> 
+                </div>
+            </div>
+ 
+            <audio id="music" src="not_found.html"></audio>
+      </div> 
+  </center> 
+    </div>
     <div id = "rightbar"></div>
     <div id="file"></div>
     <footer></footer>
@@ -44,7 +82,6 @@
     </div> <!-- END UNIQUE CONTENT-->
 
     </body>
-    <script src = "music.js"></script>
 
 </div>
 

@@ -2,7 +2,6 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
-
 @font-face {
   font-family: "my-handwriting"; 
   src: url("assets/my-handwriting.otf.woff2") format('woff2');
@@ -11,94 +10,14 @@
   font-display: swap; 
 }
 
-/*============LAYOUT============*/
-  body {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 1fr auto auto;
-    grid-template-areas: "leftbar header rightbar"
-                        "leftbar main rightbar"
-                        "footer footer footer";
-                        
-    background-color: var(--primary);
+body{
+  background-color: var(--primary);
     color: var(--text-main);
     font-family: "my-handwriting";
     cursor: url(/assets/icons/blue-pointer.png), auto;
     
     padding: 15px;
-  }
-
-@media screen and (max-width: 1365px) {
-  body {
-  grid-template-columns: 25% 75%;
-  grid-template-areas: "leftbar header"
-                       "leftbar main"
-                       "rightbar rightbar"
-                       "footer footer";
-  }
 }
-
-@media screen and (max-width: 1100px) {
-  body {
-  grid-template-columns: 1fr;
-  grid-template-areas: "header"
-                       "main"
-                       "leftbar"
-                       "rightbar"
-                       "footer";
-  }
-}
-
-header{
-  grid-area: header;
-  display: grid;
-}
-
-#leftbar{
-  grid-area: leftbar;
-}
-
-#rightbar{
-  grid-area: rightbar;
-  display: block;
-  padding: 10px;
-  overflow: scroll;
-}
-
-footer{
-  grid-area: footer;
-  text-align: center;
-  margin-top: 50px;
-  
-  
-  background-color: var(--alt);
-  color: var(--text-alt);
-}
-
-#tabs{
-  display: grid;
-  grid-template-columns: repeat(6,1fr) 10px;
-  margin-bottom: 0px;
-}
-
-.file-tab{
-  border-radius: 10px 10px 0px 0px;
-  margin-right: 2px;
-  padding: 15px;
-  height: auto; 
-
-  margin-bottom: 0px;
-  
-  text-decoration: none;
-  font-size: auto;
-
-  border:solid;
-  border-bottom:none;
-  background-color: var(--alt);
-  color: var(--text-alt);
-  border-color: var(--accent) var(--text-main) var(--primary) var(--main);
-}
-
 /*============CLASSES===========*/
 
 a {
@@ -133,7 +52,7 @@ button:hover {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 150px);
   gap: 10px;
   
   background-color: var(--alt);

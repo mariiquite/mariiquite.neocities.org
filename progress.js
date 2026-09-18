@@ -11,7 +11,7 @@
     {
         title: "site kanban board",
         description: "this page!",
-        status: "in progress"
+        status: "complete"
     },
     {
         title: "handwriting font",
@@ -25,8 +25,8 @@
     },
     {
         title: "git",
-        description: "",
-        status: "idea"
+        description: "storing my site files in git so I can see history and suchhhh",
+        status: "in progress"
     },
     {
         title: "11ty",
