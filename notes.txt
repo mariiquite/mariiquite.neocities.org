@@ -6,4 +6,5 @@ which makes them hard to deal with
 music player not WORKING AHHHH works when html is in page already
 but not when inserted via layout.js
 
-             
+make header files look like this for cachebusting:
+<src=example.js{{nocache}}">

@@ -126,10 +126,26 @@ ul{
   border-color: var(--alt);
 }
 
+#changelog-textbox{
+  padding: 10px;
+  padding-left: 20px;
+  width: 75%;
+  background-color: var(--accent);
+  border: solid;
+  border-color: var(--text);
+  margin: 5px;
+  text-align: left;
+}
+
 #continue {
   border-radius: 0px;
   font-size: 30px;
-  color: var(--primary)
+  color: var(--primary);
+  background: var(--alt);
+}
+
+#enter-site{
+  justify-self: center;
 }
 
 #file {
