@@ -1,5 +1,4 @@
-<html>
-  <center> <img id="profile-picture" src="/assets/img/solpfp.png"> </center>
+<center> <img id="profile-picture" src="{{ nesting }}assets/img/solpfp.png"> </center>
   <center>
       <div id="musicplayer">
             <div class="now-playing">Loading...</div>
@@ -36,58 +35,10 @@
       </div> 
   </center> 
   
-        <!--
-      <div id=sitemap class="dotted">
-      <h3>Site Map (inactive links, for now)</h3>
-      <div id="site-index">
-        <ul>
-          <li>cover page</li>
-          <li>home page</li>
-            <ul>
-              <li> Works </li>
-              	<ul>
-              	  <li> artfight </li>
-                  <li> toyhou.se </li>
-                  <li> substack </li>
-              	  <li> soundcloud </li>
-              	  <li> band camp </li>
-              	  <li> Bluesky </li>
-              	</ul>
-            	<li> Gallery </li>
-            	<ul>
-            	  <li> iNaturalist </li>
-            	  <li> Gallery </li>
-            	</ul>
-            	<li> Favorites </li>
-            	<ul>
-              	<li> Shrines! </li>
-            	  <li> letterboxd </li>
-            	  <li> hardcover </li>
-            	</ul>
-            	<li> Contact </li>
-            	<ul>
-            	  <li> Bluesky </li>
-            	  <li> Instagram </li>
-            	  <li> Email </li>
-            	</ul>
-            	<li> Guestbook </li>
-            	<li> Support </li>
-            	<ul>
-            	  <li> Patreon </li>
-            	  <li> Kofi </li>
-            	  <li> Substack </li>
-            	  <li> Etc </li>
-            	</ul>
-            </ul>
-        </ul>
-      </div>
-      </div>
-      <div id="site-graph">
-       <p> this is going to be a cool node graph of my site :)) </p> -->
       <center id="sitebutton">
         <p> My site button: </p>
         <a href="https://mariiquite.neocities.org"> 
-          <img id = "my-button" src="/assets/img/mariiquite.png" alt="mariiquite site button" title = "mariiquite"> 
+          <img id = "my-button" src="{{ nesting }}assets/img/mariiquite.png" alt="mariiquite site button" title = "mariiquite"> 
         </a>
         <br>
         <textarea>
@@ -101,6 +52,7 @@
         <h3> Change Log (WIP)</h3> 
         <div id="changelog-textbox">
           <ul>
+            <li> SEPTEMBER 22, 2026: 11ty integration, fixed music player and hit counter.</li>
             <li> SEPTEMBER 18, 2026: Change Log added.</li>
             <li> JULY 19, 2025: Site created! </li>
           </ul>
@@ -108,6 +60,5 @@
       </center>
 
       <center id="site-progress">
-        <a href="/progress.html" > <button> Site Progress </button> </a>
+        <a href="{{nesting}}progress.html" > <button> Site Progress </button> </a>
       </center>
-</html>

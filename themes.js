@@ -16,16 +16,16 @@ function goDark(){
     let theme = selectTheme();
     theme += '-dark';
     document.documentElement.setAttribute("data-theme", theme)
-    document.querySelector("#light-mode-button").src = "assets/icons/light-select.png";
-    document.querySelector("#dark-mode-button").src = "assets/icons/dark.png";
+    document.querySelector("#light-mode-button").src = "../assets/icons/light-select.png";
+    document.querySelector("#dark-mode-button").src = "../assets/icons/dark.png";
     localStorage.setItem('site-theme', 'dark');
 }
 
 function lightsUp(){
     const theme = selectTheme();
     document.documentElement.setAttribute("data-theme", theme);
-    document.querySelector("#light-mode-button").src = "assets/icons/light.png";
-    document.querySelector("#dark-mode-button").src = "assets/icons/dark-select.png";
+    document.querySelector("#light-mode-button").src = "../assets/icons/light.png";
+    document.querySelector("#dark-mode-button").src = "../assets/icons/dark-select.png";
     localStorage.setItem('site-theme', 'light');
 }
 
@@ -35,7 +35,7 @@ function selectTheme(){
 
     const springEquinox = new Date(year, 3, 20);
     const summerSolstice = new Date(year, 6, 21);
-    const autumnalEquinox = new Date(year, 9, 20);
+    const autumnalEquinox = new Date(year, 9, 22);
     const winterSolstice = new Date(year, 12, 21);
 
     let theme = '';
@@ -51,6 +51,8 @@ function selectTheme(){
     } else { 
         theme = 'winter';
     }
+
+    console.log(theme, "chosen for", today);
 
     return theme;
 }

@@ -1,37 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    //document.body.insertAdjacentHTML("afterbegin", adlHTML);
-    loadContent(document.querySelector("header"), "header.html");
-    loadContent(document.querySelector("footer"), "footer.html");
-    loadContent(document.querySelector("#leftbar"), "left-bar.html");
-    loadContent(document.querySelector("#rightbar"), "right-bar.html");
-
-    loadMusic();
-});
-
 window.onload = function () {
     initActiveLinks();
 }
-
-const loadContent = (self, page) => {
-    fetch(`${page}`)
-        .then(res =>{
-            if(res.ok){
-            return res.text();
-        }
-    })
-    .then (html => {
-        self.innerHTML = html;
-    });
-
-    [...document.querySelectorAll("button")].forEach((button) => {
-        if(button == self){
-            console.log("button is self");
-            button.classList.add("active");
-        } else if (button.classList.contains("active")){
-            button.classList.remove("active");
-        }
-    })
-};
 
 function initActiveLinks() {
   const pathname = window.location.pathname;
@@ -85,8 +54,35 @@ const dismiss = self => {
   }
 }
 
-function loadMusic(){
-  const script = document.createElement('musicScript');
-  musicScript.src = 'music.js';
-  document.body.appendChild(musicScript);
-}
+
+/*  replaced with 11ty 
+document.addEventListener("DOMContentLoaded", function () {
+    //document.body.insertAdjacentHTML("afterbegin", adlHTML);
+    loadContent(document.querySelector("header"), "header.html");
+    loadContent(document.querySelector("footer"), "footer.html");
+    loadContent(document.querySelector("#leftbar"), "left-bar.html");
+    loadContent(document.querySelector("#rightbar"), "right-bar.html");
+
+    loadMusic();
+});
+*/
+/* const loadContent = (self, page) => {
+    fetch(`${page}`)
+        .then(res =>{
+            if(res.ok){
+            return res.text();
+        }
+    })
+    .then (html => {
+        self.innerHTML = html;
+    });
+
+    [...document.querySelectorAll("button")].forEach((button) => {
+        if(button == self){
+            console.log("button is self");
+            button.classList.add("active");
+        } else if (button.classList.contains("active")){
+            button.classList.remove("active");
+        }
+    })
+};*/

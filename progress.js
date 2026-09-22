@@ -20,18 +20,18 @@
     },
     {
         title: "music player",
-        description: "",
-        status: "in progress"
+        description: "My main pages have a music player! go find the jams!",
+        status: "complete"
     },
     {
         title: "git",
         description: "storing my site files in git so I can see history and suchhhh",
-        status: "in progress"
+        status: "complete"
     },
     {
         title: "11ty",
-        description: "",
-        status: "idea"
+        description: "finally figured out a solid way to keep the layout the same for my file folder pages :))",
+        status: "complete"
     },
     {
         title: "shrine: wolves",
@@ -50,7 +50,7 @@
     },
     {
         title: "neko",
-        description: "",
+        description: "little guy in the corner :3 he can follow u around my site :))",
         status: "complete"
     },
     {
@@ -100,12 +100,12 @@
     },
     {
         title: "external links",
-        description: "so my music, writing, other contact info, etc",
+        description: "to my music, writing, other contact info, etc",
         status: "in progress"
     },
     {
         title: "bear blog",
-        description: "",
+        description: "not sure what I want this to be quite yet...",
         status: "in progress"
     },
     {
@@ -136,7 +136,7 @@
     {
         title: "hit counter",
         description: "so I can see when u take a peek >w<",
-        status: "in progress"
+        status: "complete"
     },
     {
         title: "catbox folders",
