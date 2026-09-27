@@ -1,3 +1,4 @@
+// rename this thang lol
 window.onload = function () {
     initActiveLinks();
 }
@@ -7,10 +8,10 @@ function initActiveLinks() {
   [...document.querySelectorAll("a")].forEach((el) => {
     let elHref = el.getAttribute("href")
       .replace(".html", "")
-      .replace("/public", "");
+      .replace("../public", ""); //path
 
     //console.log("elHref: ", elHref);
-    //console.log("pathname:", pathname);
+   // console.log("pathname:", pathname);
 
     if (pathname === "/") { // homepage
       if (elHref === "/" || elHref == "/index.html") {
@@ -41,10 +42,6 @@ function getNestingString() {
 }
 
 const nesting = getNestingString();
-
-const adlHTML = `
-    
-`
 
 const dismiss = self => {
   let em = self.closest(".overlay");

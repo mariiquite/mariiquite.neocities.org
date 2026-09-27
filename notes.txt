@@ -11,3 +11,11 @@ thing, you can't just put {{nocache}} in all ur files...
 so figure that out too lol
 
 why does theme take forever to load in...... check on that
+
+I would like webrings to maybe fit multiple on a row
+when the right bar has the full vp width? mayhaps?
+
+FIXES=====================
+tabs show active page!
+seasonal themes
+added credits

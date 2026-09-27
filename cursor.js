@@ -4,7 +4,7 @@
 *  http://www.mf2fm.com/rv  *
 ****************************/
 
-var colours=new Array("var(--accent)", "var(--main)", "var(--text)", "var(--text)", "var(--text-alt"); // colours for top, right, bottom and left borders and background of bubbles
+var colours=new Array("var(--accent)", "var(--main)", "var(--text)", "var(--text)", "var(--text-alt)"); // colours for top, right, bottom and left borders and background of bubbles
 var bubbles=66; // maximum number of bubbles on screen
 var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
 

@@ -4,6 +4,7 @@ body {
     grid-template-rows: 285px auto auto;
     grid-template-areas: "leftbar header rightbar"
                         "leftbar main rightbar"
+                        "leftbar credits rightbar"
                         "footer footer footer";
   }
 
@@ -13,6 +14,7 @@ body {
   grid-template-areas: "leftbar header"
                        "leftbar main"
                        "rightbar rightbar"
+                       "credits credits"
                        "footer footer";
   }
 }
@@ -24,6 +26,7 @@ body {
                        "main"
                        "leftbar"
                        "rightbar"
+                       "credits"
                        "footer";
   }
 }
@@ -43,6 +46,12 @@ header{
   padding: 10px;
   overflow: scroll;
   min-height: 100vh;
+}
+
+#credits{
+  grid-area: credits;
+  height: 200px;
+  overflow-y: scroll;
 }
 
 footer{

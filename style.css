@@ -46,8 +46,8 @@ button:hover {
 }
 
 .active{
-  color: var(--text-alt);
-  background: var(--main);
+    color: var(--text-alt);
+    background-color: var(--main);
 }
 
 .gallery {
@@ -102,6 +102,10 @@ iframe{
   background-color: rgba(0,0,0,0.8); /* Black background with opacity */
 }
 
+.textbox{
+  background-color: var(--textboxes);
+}
+
 ul{
   padding-left: 7px;
   margin: 5px;
@@ -131,11 +135,13 @@ ul{
   padding: 10px;
   padding-left: 20px;
   width: 75%;
-  background-color: var(--accent);
+  height: 120px;
   border: solid;
   border-color: var(--text);
   margin: 5px;
   text-align: left;
+
+  overflow-y: scroll;
 }
 
 #continue {
@@ -224,5 +230,8 @@ ul{
 }
 
 #webrings{
-  grid-template-columns: repeat(autofill, 500px);
+  .gallery-item{
+    width: auto;
+  }
+  grid-template-columns: repeat(autofill, 120px);
 }

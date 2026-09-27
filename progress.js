@@ -147,6 +147,11 @@
         title: "newsletters",
         description: "I want to turn them into a blog situation!",
         status: "in progress"
+    },
+    {
+        title: "credits",
+        description: "list of people and resrources who have made this site possible!",
+        status: "in progress"
     }
  ];
 

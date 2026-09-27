@@ -4,18 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@mariiquite</title>
 
-    <link href="{{ nesting }}style.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ nesting }}music.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ nesting }}themes.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ nesting }}layout.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
+    
+    <link href="{{ nesting }}layout.css {{ nocache }}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ nesting }}style.css {{ nocache }}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ nesting }}music.css {{ nocache }}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ nesting }}themes.css {{ nocache }}" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://furryring.neocities.org/onionring.css">
 
-    <script src = "{{ nesting }}themes.js{{nocache}}"></script>
-    <script src = "{{ nesting }}cursor.js{{nocache}}"></script>
-    <script src = "{{ nesting }}layout.js{{nocache}}"></script>
+    <script src = "{{ nesting }}themes.js{{ nocache }}"></script>
+    <script src = "{{ nesting }}layout.js{{ nocache }}"></script>
+    <script src = "{{ nesting }}cursor.js{{ nocache }}"></script>
 
   </head>
-  <script> NekoType="black" </script>
+  <script> NekoType= "black" </script>
     <h1 id = nl >
         <script src="https://webneko.net/n20171213.js"></script>
         <a href="https://webneko.net">Neko</a>              
@@ -37,14 +38,16 @@
         {{ content | safe }}
     </div>
 
+    <div id="credits">
+        {%include 'credits.njk'%}
+    </div>
+
     <footer>
         {% include 'footer.njk'%}
     </footer>
 
-    <script src="{{nesting}}music.js{{nocache}}"></script>
+    <script src= "{{ nesting }}music.js{{nocache}}" ></script>
     </body>
 
 </div>
-
 </html>
-

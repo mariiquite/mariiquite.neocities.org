@@ -12,6 +12,7 @@
     --text-alt: var(--l-green);
     --accent: var(--orange);
     --accent-hover: var(--d-blue);
+    --textboxes: var(--l-green);
 
     /* MUSIC PLAYER */
     --bg: var(--blue);
@@ -38,6 +39,7 @@ html[data-theme="basic-dark"] {
     --text-alt: var(--d-blue);
     --accent: var(--orange);
     --accent-hover: var(--l-green);
+    --textboxes: var(--l-green);
 
     /* MUSIC PLAYER */
     --bg: var(--orange);
@@ -64,6 +66,7 @@ html[data-theme="spring"] {
     --text-alt: var(--l-green);
     --accent: var(--pink);
     --accent-hover: var(--d-blue);
+    --textboxes: var(--l-green);
 
     /* MUSIC PLAYER */
     --bg: var(--l-blue);
@@ -90,6 +93,7 @@ html[data-theme="spring-dark"] {
     --text-alt: var(--d-blue);
     --accent: var(--pink);
     --accent-hover: var(--l-green);
+    --textboxes: var(--l-green);
 
     /* MUSIC PLAYER */
     --bg: var(--blue);
@@ -116,6 +120,7 @@ html[data-theme="summer"] {
     --text-alt: var(--yellow);
     --accent: var(--cyan);
     --accent-hover: var(--plum);
+    --textboxes: var(--yellow);
 
     /* MUSIC PLAYER */
     --bg: var(--blue);
@@ -142,6 +147,7 @@ html[data-theme="summer-dark"] {
     --text-alt: var(--purple);
     --accent: var(--orange);
     --accent-hover: var(--l-blue);
+    --textboxes: var(--l-blue);
 
     /* MUSIC PLAYER */
     --bg: var(--orange);
@@ -168,6 +174,7 @@ html[data-theme="fall"] {
     --text-alt: var(--green);
     --accent: var(--red);
     --accent-hover: var(--brown);
+    --textboxes: var(--orange);
 
     /* MUSIC PLAYER */
     --bg: var(--orange);
@@ -180,9 +187,9 @@ html[data-theme="fall"] {
     --squares: var(--red);
 }
 
-html[data-theme="fall-dark"] {
-    --green: #084c00;
-    --d-purple: #58008f;
+html[data-theme="fall-dark"] { /* fix names */
+    --green: #1a1a1a;
+    --d-purple: #68219e;
     --l-purple: #883cc3;
     --lime: #1aff00;
     --orange: #ffa200;
@@ -194,6 +201,7 @@ html[data-theme="fall-dark"] {
     --text-alt: var(--green);
     --accent: var(--lime);
     --accent-hover: var(--orange);
+    --textboxes: var(--orange);
 
     /* MUSIC PLAYER */
     --bg: var(--d-purple);
@@ -220,6 +228,7 @@ html[data-theme="winter"] {
     --text-alt: var(--grey);
     --accent: var(--red);
     --accent-hover: var(--brown);
+    --textboxes: var(--blue);
 
     /* MUSIC PLAYER */
     --bg: var(--blue);
@@ -246,6 +255,7 @@ html[data-theme="winter-dark"] {
     --text-alt: var(--d-purple);
     --accent: var(--mint);
     --accent-hover: var(--mint);
+    --textboxes: var(--mint);
 
     /* MUSIC PLAYER */
     --bg: var(--purple);
