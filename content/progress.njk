@@ -1,0 +1,45 @@
+---
+title: Progress
+nesting: "./"
+---
+<html data-theme="basic">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@mariiquite</title>
+
+    <link href="{{nesting}}style.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{nesting}}themes.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{nesting}}kanban.css{{nocache}}" rel="stylesheet" type="text/css" media="all">
+
+    <script src = "{{nesting}}themes.js{{nocache}}"></script>
+    <script src = "{{nesting}}progress.js{{nocache}}"></script>
+    <script src = "{{nesting}}cursor.js{{nocache}}"></script>
+  </head>
+
+  <a href = "public/home.html" id="back-button"> 
+    <button > <- Home </button>
+  </a>
+  
+  <div id="header1"class="column-header">
+      <h2> TO-DO</h2>
+  </div>
+
+  <div class="kanban-column" id="progress-left">
+    <div id="todo" class="kanban-area"></div>
+  </div>
+
+  <div id="header2"class="column-header">
+      <h2> ON IT! </h2>
+  </div>
+  
+  <div class="kanban-column" id="progress-center">
+    <div id="inprogress" class="kanban-area"> </div>
+  </div>
+
+   <div id="header3"class="column-header">
+      <h2> COMPLETE</h2>
+  </div>
+  <div class="kanban-column" id="progress-right">
+    <div id="complete" class="kanban-area"></div>
+  </div>

@@ -4,5 +4,11 @@
   },
   "dependencies": {
     "html-minifier-terser": "^7.2.0"
+  },
+
+
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --watch"
   }
 }

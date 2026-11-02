@@ -15,7 +15,18 @@ why does theme take forever to load in...... check on that
 I would like webrings to maybe fit multiple on a row
 when the right bar has the full vp width? mayhaps?
 
+the rest of the textile themes....
+
+better galleries. like gothichermaphrodite's....
+
+ACCESSIBILITY: (this all went to shit with textile themes lol)
+contrast
+skip links
+keyboard navs
+motion reduction
+
 FIXES=====================
-tabs show active page!
-seasonal themes
-added credits
+added playlists
+added dogonline webring!
+no pfp
+textiles.... and new themes! only fall so far lol
