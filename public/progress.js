@@ -157,6 +157,41 @@
         title: "credits",
         description: "list of people and resrources who have made this site possible!",
         status: "in progress"
+    },
+    {
+        title: "last.fm",
+        description: "I would love a widget that shows u what I've been listening to or something...",
+        status: "idea"
+    },
+    {
+        title: "paint.js",
+        description: "I wanna give you a place to doodle!!",
+        status: "idea"
+    },
+    {
+        title: "comment section",
+        description: "I'm not sure if I want this but I'm thinking about it... may replace guestbook ... :(?",
+        status: "idea"
+    },
+    {
+        title: "git pt 2",
+        description: "I can now completely update my site from my repo! I don't have to manually upload files to neociteis mwahaha thank u petrapixels <3",
+        status: "complete"
+    },
+    {
+        title: "fabric themes",
+        description: "still keeping the seasonal themes, but now based on textiles! they are pictures of my pants lol. one of many ways to give my site more texture...",
+        status: "in progress"
+    },
+    {
+        title: "point + click 'what's in my bag'!",
+        description: "I really want to have more interactive immersive pages!",
+        status: "idea"
+    },
+    {
+        title: "point + click life list!",
+        description: "I really want to have more interactive immersive pages!",
+        status: "idea"
     }
  ];
 
